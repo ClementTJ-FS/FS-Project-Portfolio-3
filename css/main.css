@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+article {
+  border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
+}
+
+figure {
+  border: 1px solid black;
+  height: 30rem;
+}
+
+main {
+  width: 120rem;
+  background-color: gray;
+}
+/*# sourceMappingURL=main.css.map */

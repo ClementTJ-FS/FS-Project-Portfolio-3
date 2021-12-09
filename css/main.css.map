@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,AAAA,OAAO,CAAA;EACH,MAAM,EAAE,eAAe;EACvB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CAChB;;AACD,AAAA,MAAM,CAAA;EACF,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,KAAK;CAChB;;AACD,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,MAAM;EACb,gBAAgB,EAAE,IAAI;CACzB",
     "sources": [
-        "../scss/main.scss"
+        "../scss/main.scss",
+        "../scss/_default-theme.scss"
     ],
     "names": [],
     "file": "main.css"
