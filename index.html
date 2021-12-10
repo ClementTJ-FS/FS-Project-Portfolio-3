@@ -6,61 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A Halo Infinite news, image, and video site.">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Halo News Site</title>
   </head>
   <body>
-    <header>
-        <h1>Halo News Site</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="../index.html">Home</a>
-            </li>
-            <li>
-            <a href="html/news.html">News</a>
-            </li>
-            <li>
-              <a href="html/gallery.html">Gallery</a>
-            </li>
-            <li>
-              <a href="html/videos.html">Videos</a>
-            </li>
-          </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Halo News Site</a>
+        
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#navToggle"
+        aria-controls="navToggle" 
+        aria-expanded="false"
+        aria-label="Toggle Navigation">
+          <div class="navbar-toggler-icon"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navToggle">
+          <div class="navbar-nav ml-auto">       
+            <a class="nav-item nav-link" href="../index.html">Home</a>      
+            <a class="nav-item nav-link" href="html/news.html">News</a>       
+            <a class="nav-item nav-link" href="html/gallery.html">Gallery</a>  
+            <a class="nav-item nav-link" href="html/videos.html">Videos</a>         
+          </div><!--navbar-->
+        </div><!--collapse-->
+      </div><!--container-->
+    </nav>
 
     <main class="container">
-      <section> <!--Top Item-->
-        <article>
-          <h3>WELCOME TO HALO INFINITE</h3>
-          <img src="img/articles/8.jpg" alt="Master Chief standing infront of alien world.">          
+      <section class="row"> <!--Top Item-->
+        <article class="col">
+          <h3 class="text-center">WELCOME TO HALO INFINITE</h3>
+          <img class="img-fluid" src="img/articles/8.jpg" alt="Master Chief standing infront of alien world.">          
         </article>
       </section> 
 
-      <section> <!--News Section-->
-        <h2>Latest News</h2>
-        <article>
-          <h4>QUICK RESUME CAN LOCK YOU OUT OF COSMETICS</h4>
-          <img src="img/articles/9.webp" alt="Master Chief holding an AR.">
-        </article>  
-        <article>
-          <h4>THEATER MODE RECORDINGS ABOUT TO DISAPPEAR</h4>
-          <img src="img/articles/10.webp" alt="A Spartan leaning against a sandbag.">
-        </article>      
-        <article>
-          <h4>FRACTURE: TENRAI EVENT LAUNCH</h4>
-          <img src="img/articles/1.jpg" alt="Two Spartans wearing event armor.">
-        </article>  
-        <article>
-          <h4>HCS 2021-2022 SEASON REVEAL</h4>
-          <img src="img/articles/2.png" alt="Five Spartans.">
-        </article>  
-      </section> 
+      <div class="row">
+          <section> <!--News Section-->
+            <h2 class="text-center">Latest News</h2>
+            <article>
+              <h4>QUICK RESUME CAN LOCK YOU OUT OF COSMETICS</h4>
+              <img class="img-fluid" src="img/articles/9.webp" alt="Master Chief holding an AR.">
+            </article>  
+            <article>
+              <h4>THEATER MODE RECORDINGS ABOUT TO DISAPPEAR</h4>
+              <img class="img-fluid" src="img/articles/10.webp" alt="A Spartan leaning against a sandbag.">
+            </article>      
+            <article>
+              <h4>FRACTURE: TENRAI EVENT LAUNCH</h4>
+              <img class="img-fluid" src="img/articles/1.jpg" alt="Two Spartans wearing event armor.">
+            </article>  
+            <article>
+              <h4>HCS 2021-2022 SEASON REVEAL</h4>
+              <img class="img-fluid" src="img/articles/2.png" alt="Five Spartans.">
+          </article>  
+        </section> 
+      
+      
 
       <section> <!--Images-->
-        <h2>Latest Images</h2>
+        <h2 class="text-center">Latest Images</h2>
         <img src="img/1.jpg" alt="">
         <img src="img/5.jpg" alt="">
         <img src="img/3.jpg" alt="">
@@ -68,7 +74,7 @@
       </section>
 
       <section> <!--Video-->
-        <h2>Latest Videos</h2>
+        <h2 class="text-center">Latest Videos</h2>
       </section>
     </main>
 
@@ -84,7 +90,8 @@
       </ul>
     </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--Bootstrap Bundle with jQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   </body>
 </html>
