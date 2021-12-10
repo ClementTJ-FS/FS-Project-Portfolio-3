@@ -1,3 +1,6 @@
+body{
+  background: #6C756B;
+}
 .navbar{
   background: #1D2A2F;
 }
@@ -5,13 +8,20 @@
   background: none;
 }
 
-article {
-  background: white;
-  border: 1px solid black;
-  width: 40.18rem;
+main {
+  padding-top: 5rem;
+  max-width: 100rem;
+  background-color: #B0B7AA;
 }
 
-main {
-  width: 120rem;
-  background-color: gray;
+.card-header{
+  background: #6C756B;
+}
+.card-img{
+  height: 20rem;
+  object-fit: cover;
+}
+
+footer{
+  background: #1D2A2F;
 }

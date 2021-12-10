@@ -11,9 +11,8 @@
     <title>Halo News Site</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark navbar-expand-sm">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Halo News Site</a>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <a class="navbar-brand mx-auto" href="index.html">Halo News Site</a>
         
         <button class="navbar-toggler" type="button"
         data-toggle="collapse" data-target="#navToggle"
@@ -31,51 +30,65 @@
             <a class="nav-item nav-link" href="html/videos.html">Videos</a>         
           </div><!--navbar-->
         </div><!--collapse-->
-      </div><!--container-->
     </nav>
 
-    <main class="container">
-      <section class="row"> <!--Top Item-->
-        <article class="col">
-          <h3 class="text-center">WELCOME TO HALO INFINITE</h3>
-          <img class="img-fluid" src="img/articles/8.jpg" alt="Master Chief standing infront of alien world.">          
-        </article>
-      </section> 
-
-      <div class="row">
-          <section> <!--News Section-->
-            <h2 class="text-center">Latest News</h2>
-            <article>
-              <h4>QUICK RESUME CAN LOCK YOU OUT OF COSMETICS</h4>
-              <img class="img-fluid" src="img/articles/9.webp" alt="Master Chief holding an AR.">
-            </article>  
-            <article>
-              <h4>THEATER MODE RECORDINGS ABOUT TO DISAPPEAR</h4>
-              <img class="img-fluid" src="img/articles/10.webp" alt="A Spartan leaning against a sandbag.">
-            </article>      
-            <article>
-              <h4>FRACTURE: TENRAI EVENT LAUNCH</h4>
-              <img class="img-fluid" src="img/articles/1.jpg" alt="Two Spartans wearing event armor.">
-            </article>  
-            <article>
-              <h4>HCS 2021-2022 SEASON REVEAL</h4>
-              <img class="img-fluid" src="img/articles/2.png" alt="Five Spartans.">
-          </article>  
+    <main class="mx-auto">
+      <div class="container">
+        <section id="top-item" class="row row-cols-1 text-center no-gutters"> <!--Top Item-->
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h3>WELCOME TO HALO INFINITE</h3>
+              </div>             
+              <img class="card-img" src="img/articles/8.jpg" alt="Master Chief standing infront of alien world.">   
+            </div><!--card-->                   
+          </div><!--col-->
         </section> 
-      
-      
 
-      <section> <!--Images-->
-        <h2 class="text-center">Latest Images</h2>
-        <img src="img/1.jpg" alt="">
-        <img src="img/5.jpg" alt="">
-        <img src="img/3.jpg" alt="">
-        <img src="img/4.jpg" alt="">
-      </section>
-
-      <section> <!--Video-->
-        <h2 class="text-center">Latest Videos</h2>
-      </section>
+        <section> <!--News Section-->
+          <h2 class="text-center">Latest News</h2>
+          <div class="row row-cols-1 row-cols-md-2 text-center text-white">
+            <div class="col mb-3">
+              <div class="card">           
+                <div class="card-header">QUICK RESUME CAN LOCK YOU OUT OF COSMETICS</div>               
+                <img class="card-img" src="img/articles/9.webp" alt="Master Chief holding an AR.">               
+                </div><!--card-->  
+              </div><!--col-->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">THEATER MODE RECORDINGS ABOUT TO DISAPPEAR</div>
+                  <img class="card-img" src="img/articles/10.webp" alt="A Spartan leaning against a sandbag.">
+                </div><!--card-->      
+              </div><!--col-->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">FRACTURE: TENRAI EVENT LAUNCH</div>
+                  <img class="card-img" src="img/articles/1.jpg" alt="Two Spartans wearing event armor.">
+                </div><!--card-->  
+              </div><!--col-->
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">HCS 2021-2022 SEASON REVEAL</div>
+                  <img class="card-img" src="img/articles/2.png" alt="Five Spartans.">
+                </div>  <!--card-->
+              </div> <!--col-->
+          </div>  <!--row-->
+      </section> 
+        
+        
+<!--
+        <section class="row"> 
+          <h2 class="text-center">Latest Images</h2>
+          <img src="img/1.jpg" alt="">
+          <img src="img/5.jpg" alt="">
+          <img src="img/3.jpg" alt="">
+          <img src="img/4.jpg" alt="">
+        </section>
+-->
+        <section> <!--Video-->
+          <h2 class="text-center">Latest Videos</h2>
+        </section>
+      </div>
     </main>
 
     <footer>
