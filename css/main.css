@@ -1,27 +1,39 @@
 body{
   background: #6C756B;
 }
+section{
+  margin-bottom: 3rem;
+}
 .navbar{
+  font-size: 1.5rem;
   background: #1D2A2F;
 }
 .breadcrumb{
   background: none;
 }
-
+h3{
+  margin-bottom: 0;
+}
 main {
-  padding-top: 5rem;
-  max-width: 100rem;
+  padding: 5rem 0;
+  max-width: 80rem;
   background-color: #B0B7AA;
 }
-
+#top-item{
+  height: 35rem;
+}
 .card-header{
   background: #6C756B;
 }
 .card-img{
-  height: 20rem;
+  height: 15rem;
   object-fit: cover;
 }
 
+#carouselContainer img{
+  max-height: 40rem;
+}
 footer{
+  height: 5rem;
   background: #1D2A2F;
 }
