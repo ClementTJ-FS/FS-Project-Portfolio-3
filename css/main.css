@@ -11,7 +11,7 @@ section{
 .breadcrumb{
   background: none;
 }
-h3{
+h3,h2{
   margin-bottom: 0;
 }
 main {
@@ -19,21 +19,45 @@ main {
   max-width: 80rem;
   background-color: #B0B7AA;
 }
-#top-item{
+#top-item img{
   height: 35rem;
+  object-fit: cover;
 }
 .card-header{
   background: #6C756B;
 }
 .card-img{
-  height: 15rem;
-  object-fit: cover;
-}
+  height: 18rem;
+  object-fit: fill;
 
+}
+@media screen and (min-width: 768px) {
+  .card:not(#top-item){
+    margin: 0 auto;
+    max-width: 35rem;
+  }
+}
 #carouselContainer img{
   max-height: 40rem;
 }
+.video-overlay {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+z-index: 10;
+}
 footer{
+  color: #fff;
   height: 5rem;
   background: #1D2A2F;
+}
+#socials{
+  list-style: none;
+}
+#socials li{
+  display: inline;
+  margin: .2rem;
 }
