@@ -54,6 +54,12 @@ main {
 #carouselContainer img{
   max-height: 40rem;
 }
+.modal-dialog {
+  max-width: 1920px;
+}
+.modal-fc{
+  max-width: fit-content !important;
+}
 .video-overlay {
   height: 64px;
   width: 64px;
