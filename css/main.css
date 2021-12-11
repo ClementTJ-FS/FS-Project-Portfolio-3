@@ -8,6 +8,20 @@ section{
   font-size: 1.5rem;
   background: #1D2A2F;
 }
+.navbar-brand{
+  position: absolute;
+  left: 50%;
+  top:4%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 992px) {
+  .navbar-brand{
+    position: absolute;
+    left: 50%;
+    top:15%;
+    transform: translateX(-50%);
+  }
+}
 .breadcrumb{
   background: none;
 }
@@ -47,7 +61,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-z-index: 10;
+  z-index: 10;
 }
 footer{
   color: #fff;
