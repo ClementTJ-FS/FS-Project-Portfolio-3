@@ -1,27 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Genos&display=swap');
+
+
 body{
+  font-family: 'Exo', sans-serif;
   background: #6C756B;
 }
 section{
   margin-bottom: 3rem;
 }
+/* nav */
 .navbar{
   font-size: 1.5rem;
   background: #1D2A2F;
 }
 .navbar-brand{
+  font: bold 40px 'Genos', sans-serif;
   position: absolute;
   left: 50%;
-  top:4%;
+  top:1%;
   transform: translateX(-50%);
 }
 @media screen and (min-width: 992px) {
   .navbar-brand{
     position: absolute;
     left: 50%;
-    top:15%;
     transform: translateX(-50%);
   }
 }
+.navbar-nav a{
+  border-bottom: 3px solid transparent;
+}
+.navbar-nav a:hover{
+  text-decoration: underline;
+  text-decoration-color: #70CDDF;
+}
+@media screen and (min-width: 992px){
+    .navbar-nav a:hover{
+      text-decoration:none;
+    border-bottom: 3px solid #70CDDF;
+  }
+}
+/* content */
 .breadcrumb{
   background: none;
 }
@@ -51,6 +70,7 @@ main {
     max-width: 35rem;
   }
 }
+/* img carousel */
 #carouselContainer img{
   max-height: 40rem;
 }
