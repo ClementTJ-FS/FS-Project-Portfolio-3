@@ -44,6 +44,10 @@ section{
 .breadcrumb{
   background: none;
 }
+.breadcrumb a:hover{
+  text-decoration:none;
+  border-bottom: 3px solid #70CDDF;
+}
 h3,h2{
   margin-bottom: 0;
 }
@@ -56,13 +60,15 @@ main {
   height: 35rem;
   object-fit: cover;
 }
-.card-header{
+.card:hover{
+  border: 1px solid #70CDDF;
+}
+.card-header, .card-footer{
   background: #6C756B;
 }
 .card-img{
   height: 18rem;
   object-fit: fill;
-
 }
 @media screen and (min-width: 768px) {
   .card:not(#top-item){
