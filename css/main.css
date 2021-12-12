@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Genos&display=swap');
+
+
+body{
+  font-family: 'Exo', sans-serif;
+  background: #6C756B;
+}
+section{
+  margin-bottom: 3rem;
+}
+/* nav */
+.navbar{
+  font-size: 1.5rem;
+  background: #1D2A2F;
+}
+.navbar-brand{
+  font: bold 40px 'Genos', sans-serif;
+  position: absolute;
+  left: 50%;
+  top:1%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 992px) {
+  .navbar-brand{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.navbar-nav a{
+  border-bottom: 3px solid transparent;
+}
+.navbar-nav a:hover{
+  text-decoration: underline;
+  text-decoration-color: #70CDDF;
+}
+
+@media screen and (min-width: 992px){
+    .navbar-nav a:hover{
+      text-decoration:none;
+    border-bottom: 3px solid #70CDDF;
+  }
+}
+/* content */
+.breadcrumb{
+  background: none;
+}
+.breadcrumb a:hover{
+  text-decoration:none;
+  border-bottom: 3px solid #70CDDF;
+}
+h3,h2{
+  margin-bottom: 0;
+}
+main {
+  padding: 5rem 0;
+  max-width: 80rem;
+  background-color: #B0B7AA;
+}
+#top-item img{
+  height: 35rem;
+  object-fit: cover;
+}
+.card:hover{
+  border: 1px solid #70CDDF;
+}
+.card-header, .card-footer{
+  background: #6C756B;
+}
+.card-img{
+  height: 18rem;
+  object-fit: fill;
+}
+@media screen and (min-width: 768px) {
+  .card:not(#top-item){
+    margin: 0 auto;
+    max-width: 35rem;
+  }
+}
+/* img carousel */
+#carouselContainer img{
+  max-height: 40rem;
+}
+.modal-dialog {
+  max-width: 1920px;
+}
+.modal-fc{
+  max-width: fit-content !important;
+}
+.video-overlay {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 10;
+}
+footer{
+  color: #fff;
+  height: 5rem;
+  background: #1D2A2F;
+}
+#socials{
+  list-style: none;
+}
+#socials li{
+  display: inline;
+  margin: .2rem;
+}
