@@ -34,6 +34,7 @@ section{
   text-decoration: underline;
   text-decoration-color: #70CDDF;
 }
+
 @media screen and (min-width: 992px){
     .navbar-nav a:hover{
       text-decoration:none;

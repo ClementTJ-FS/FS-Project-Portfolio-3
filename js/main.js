@@ -14,13 +14,14 @@ $(document).ready(function() {
     $("#video-modal").on("hidden.bs.modal", function() {
         $("#video-modal iframe").removeAttr("src allow");
     });
-});
 
-//img-modal
-$("#img-modal").on("show.bs.modal", function(event) {
-    let link = $(event.relatedTarget); // the link
-    let img = link.attr('href');      //the img src
-    $(this).find("img").attr({
-        src : img
+    //img-modal
+    $("#img-modal").on("show.bs.modal", function(event) {
+        let link = $(event.relatedTarget); // the link
+        let img = link.attr('href');      //the img src
+        $(this).find("img").attr({
+            src : img
+        });
     });
 });
+
