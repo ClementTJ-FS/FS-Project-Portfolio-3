@@ -33,6 +33,7 @@ section{
 .navbar-nav a:hover{
   text-decoration: underline;
   text-decoration-color: #70CDDF;
+  text-shadow: 1px 0px 5px rgb(255, 255, 255)
 }
 
 @media screen and (min-width: 992px){
@@ -61,8 +62,10 @@ main {
   height: 35rem;
   object-fit: cover;
 }
-.card:hover{
-  border: 1px solid #70CDDF;
+.card:hover, .img-hover:hover > img{
+  border: 2px solid #70CDDF;
+  transition: transform .25s ease-in;
+  transform: scale(1.05);
 }
 .card-header, .card-footer{
   background: #6C756B;
@@ -107,4 +110,20 @@ footer{
 #socials li{
   display: inline;
   margin: .2rem;
+}
+
+.shadow{
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.87) !important;
+}
+.main-shadow{
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.431) !important;
+}
+.text-shadow-white{
+  text-shadow: 1px 0px 5px rgb(255, 255, 255);
+}
+.text-shadow-black{
+  text-shadow: 1px 0px 4px rgb(0, 0, 0);
+}
+.text-shadow-green{
+  text-shadow: 1px 0px 4px #28a7469d;
 }
