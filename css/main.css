@@ -63,7 +63,7 @@ main {
   object-fit: cover;
 }
 .card:hover, .img-hover:hover > img{
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.87) !important;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.87) !important;
   border: 2px solid #70CDDF;
   transition: transform .25s ease-in;
   transform: scale(1.05);
